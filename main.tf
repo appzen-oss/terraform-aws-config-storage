@@ -2,7 +2,6 @@ module "aws_config_label" {
   source  = "cloudposse/label/null"
   version = "0.25.0"
 
-  attributes = ["aws-config"]
   context    = module.this.context
 }
 
@@ -39,7 +38,6 @@ module "storage" {
   bucket_notifications_prefix  = var.bucket_notifications_prefix
 
   tags       = module.this.tags
-  attributes = ["aws-config"]
   context    = module.this.context
 }
 
